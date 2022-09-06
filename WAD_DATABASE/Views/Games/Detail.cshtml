@@ -1,0 +1,53 @@
+﻿@model Games
+
+<div class="main-container">
+      <nav aria-label="breadcrumb" role="navigation" class="bg-primary text-white">
+        <div class="container">
+          <div class="row justify-content-center">
+            
+            <!--end of col-->
+          </div>
+          <!--end of row-->
+        </div>
+        <!--end of container-->
+      </nav>
+      <section class="bg-white space-sm">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7 mb-4 mb-sm-0">
+                </br>
+                </br>
+              <img alt="Image" src="@Model.Image" class="rounded img-fluid" />
+            </div>
+            <!--end of col-->
+            <div class="col-lg-4 d-flex flex-column justify-content-between mr-auto ml-auto">
+              <div>
+                <h1 class="mb-2">@Model.GamesName</h1>
+                <div>
+
+                </div>
+                <div>
+                  <ul class="list-inline text-small d-inline-block mb-3">
+                    
+
+                    
+                  </ul>
+                </div>
+              </div>
+              <div>
+                  <ul class="list-inline text-small d-inline-block mb-3">
+                    
+                    
+                    <li class="list-inline-item"><i class="icon-thumbs-up"></i>Description:@Model.Description</li> </br> 
+                    
+                  </ul>
+
+              </div>
+            </div>
+            <!--end of col-->
+          </div>
+          <!--end of row-->
+        </div>
+        <!--end of container-->
+        </section>
+</div>

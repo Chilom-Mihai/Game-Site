@@ -1,0 +1,30 @@
+﻿@using WAD_DATABASE.ViewModels
+
+
+@model CreateNewsViewModel
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<form method="post" asp-action="Create" enctype="multipart/form-data">
+    <input type="hidden" id="AppUserId" name="AppUserId" asp-for="AppUserId"/>
+  <div class="form-group">
+    <label asp-for="NewsName">Title:</label>
+    <input asp-for="NewsName" class="form-control"  placeholder="Enter title">
+    <span asp-valdiation-for="NewsName" class="text danger"></span>
+  </div>
+  <div class="form-group">
+    <label asp-for="Description">Description:</label>
+    <input asp-for="Description" class="form-control"  placeholder="Enter description">
+    <span asp-valdiation-for="Description" class="text danger"></span>
+  </div>
+  <div class="form-group">
+    <label asp-for="Image">Image:</label>
+    <input asp-for="Image" type="file" class="form-control"  placeholder="Choose image">
+    <span asp-valdiation-for="Image" class="text danger"></span>
+  </div>
+  
+  <button type="submit" class="btn btn-primary">Post</button>
+</form>
